@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>-105 Productions</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+    body, html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("Polite_Cat.png");
+      min-height: 80%;
+    }
+
+    .menu {
+      display: none;
+    }
+    </style>
+  </head>
+  <body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+          <a href="#" class="w3-button w3-block w3-black">HOME</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#services" class="w3-button w3-block w3-black">SERVICES</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+        <span class="w3-tag">757-420-6969</span>
+      </div>
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size:90px">-105<br>Productions</span>
+      </div>
+      <div class="w3-display-bottomright w3-center w3-padding-large">
+        <span class="w3-text-white">69 Your Mom St.</span>
+      </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <!--<div class="w3-sand w3-grayscale w3-large">-->
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT</span></h5>
+        <p>The production team started out of no where.</p>
+        <p>...like it just happened.</p>
+        <div class="w3-panel w3-leftbar w3-light-grey">
+          <p><i>"Idk how it did but it just happened..."</i></p>
+          <p>Production manager, Zechariah Zuniga</p>
+        </div>
+        <p><strong>Opening hours:</strong> whenever we feel like it</p>
+        <p><strong>Address:</strong> 69 Your Mom St.</p>
+      </div>
+    </div>
+
+    <!-- Services Container -->
+    <div class="w3-container" id="services">
+      <div class="w3-content" style="max-width:700px">
+    
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">SERVICES</span></h5>
+      
+        <div class="w3-row w3-center w3-card w3-padding">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Photo/Video');" id="myLink">
+            <div class="w3-col s6 tablink">Photo/Video</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Audio');">
+            <div class="w3-col s6 tablink">Audio</div>
+          </a>
+        </div>
+
+        <div id="Photo/Video" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Video Services:</h5>
+          <p class="w3-text-grey">
+            Short Films<br>
+            Feature Lengths<br>
+            Trailers<br>
+
+            <video controls muted width="300">
+              <source src="lawnMower.mp4" type="video/mp4">
+            </video>
+
+            <br><i>More video services will be added in the future...</i></p><br>
+
+          <h5>Photo Services:</h5>
+          <p class="w3-text-grey">
+            Portraits<br>
+            Weddings<br>
+            Sessions<br>
+
+            <img src="rolling.jpg" width="300">
+
+            <br><i>Call for special requests 757-420-6969</i></p><br>
+        </div>
+
+        <div id="Audio" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Audio Services:</h5>
+          <p class="w3-text-grey">
+            <b>Studio:</b><br>
+            Vocal Recording<br>
+            Instrumental Recording<br>
+            Voice Over Recording<br>
+            Music Production/Composition<br>
+        </p><br>
+        
+          <p class="w3-text-grey">
+            <b>Live Audio:</b><br>
+            Live Audio Mixing<br>
+            Installations<br>
+            Lighting<br>
+        </p><br>
+
+          <p class="w3-text-grey">
+            <b>Other:</b><br>
+            Location Sound<br>
+            Sound Design<br>
+            Podcasting<br>
+          </p>
+        </div>  
+      </div>
+    </div>
+
+    <!-- Contact/Area Container -->
+    <div class="w3-container" id="where" style="padding-bottom:32px;">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+        <p>If you are interested in any of our service, please leave your information below and we will contact you as soon as possible. Thanks!</p>
+        <!--<img src="Polite_Cat.png" class="w3-image" style="width:20%">-->
+        <p></p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Requested service" required name="People"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+          <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+        </form>
+        <img src="Polite_Cat.png" style="width:25%;max-width:1000px;margin-top:32px;">
+      </div>
+    </div>
+
+    <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+      <p>Copyright © 2023 "-105 Productions". All Rights Reserved.</p>
+    </footer>
+
+    <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+    </script>
+
+  </body>
+</html>
